@@ -72,7 +72,6 @@ class BankAccount {
 
 
 }
-let account = new BankAccount("TY");
-alert(account.withdraw(1000));
+
 
 module.exports = BankAccount;

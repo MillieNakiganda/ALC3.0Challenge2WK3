@@ -1,0 +1,9 @@
+{
+  "name": "bankaccount",
+  "version": "1.0.0",
+  "main": "account.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  }
+}

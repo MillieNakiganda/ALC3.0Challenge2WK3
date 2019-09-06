@@ -44,9 +44,18 @@ class BankAccount {
     withdraw(withdrawamount) {
       if(this.openaccount == 1)
       {
+          let result = this.balance - withdrawamount;
+          if(result < 0  )
+          {
+            return `You have less money on your account`;
+          }
+          else
+          {
+            this.balance -= withdrawamount;
+            return `a withdraw of ${withdrawamount} has been made to ${this.accountnumber}`;
+          }
           
-        this.balance -= withdrawamount;
-        return `a withdraw of ${withdrawamount} has been made to ${this.accountnumber}`;
+        
       }
       else{
         return `The bank account ${this.accountnumber} is closed`;
@@ -63,6 +72,7 @@ class BankAccount {
 
 
 }
-
+let account = new BankAccount("TY");
+alert(account.withdraw(1000));
 
 module.exports = BankAccount;

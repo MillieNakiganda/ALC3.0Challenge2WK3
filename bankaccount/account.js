@@ -4,7 +4,7 @@ class BankAccount {
     constructor(accountnumber,balance = 0,openaccount = 1) {
 
         this.accountnumber = accountnumber;
-        this.balance = 0;
+        this.balance = balance;
         this.openaccount = openaccount;
 
     }
